@@ -1,0 +1,43 @@
+{
+  "about" : {
+    "para1" : "As a passionate web developer and current student, I am driven by a desire to learn, create, and innovate. My love for programming began in high school, and since then, I have been dedicated to honing my skills and expanding my knowledge.",
+    "para2" : "With a strong foundation in HTML, CSS, JavaScript, Node js, and MongoDB, I am well-equipped to develop dynamic and responsive websites that engage users and meet their needs. I am also proficient in popular frameworks such as React and Bootstrap, and I am constantly exploring new technologies to stay ahead of the curve.",
+    "para3" : "In addition to my technical skills, I bring a creative and collaborative mindset to every project I undertake. I enjoy working with teams and will also love to work with clients to understand their goals and visions, and I strive to bring those visions to life through my coding.",
+    "para4" : "As I continue my studies, I am eager to gain more hands-on experience through internships and freelance projects. I am excited to contribute my skills and enthusiasm to any organization that values innovation, teamwork, and a commitment to excellence."
+  },
+  "education" : [
+    {
+      "level" : "Undergraduation",
+      "id" : "ug",
+      "degree" : "Bachelor of Computer Application (BCA)",
+      "deg-place" : "from Ambedkar Institute of Technology",
+      "year" : "2020 - 2023",
+      "learnings" : [
+        "Developed strong research and critical analysis skills",
+        "Collaborated effectively in team-based projects and assignments"
+      ]
+    },
+    {
+      "level" : "Senior Secondary",
+      "id" : "sc",
+      "degree" : "Senior Secondary Education",
+      "deg-place" : "from CBSE (Central Board of Secondary Education)",
+      "year" : "2018 - 2020",
+      "learnings" : [
+        "Prepared for higher education or entry into the professional workforce",
+        "Demonstrated proficiency in problem-solving and decision-making"
+      ]
+    },
+    {
+      "level" : "Secondary",
+      "id" : "sec",
+      "degree" : "Secondary Education",
+      "deg-place" : "from CBSE (Central Board of Secondary Education)",
+      "year" : "2016 - 2018",
+      "learnings" : [
+        "Developed foundational knowledge in various subjects",
+        "Participated in extracurricular activities for holistic development"
+      ]
+    }
+  ]
+}
