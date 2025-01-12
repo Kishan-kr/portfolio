@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import {send} from 'emailjs-com'
+import emailjs from '@emailjs/browser';
 import {motion} from 'framer-motion'
 
 
 function Contact({setAlert, variant}) {
 
-  const [formData, setFormData ] = useState({ name: '', email: '', phone: '', message: ''})
+  const [formData, setFormData ] = useState({ name: '', email: '', phone: '', message: ''});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,11 +37,12 @@ function Contact({setAlert, variant}) {
       })
     }
     else {
-      send(
-        'service_ww37kzc',
-        'template_76r1vlb',
+      setLoading(true);
+      emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formData,
-        '96-ITgcLuxyPVQumM'
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       ).then((response) => {
         setAlert({
           isOn: true,
@@ -56,6 +58,8 @@ function Contact({setAlert, variant}) {
           msg: err
         })
         console.log('FAILED...', err);
+      }).finally(()=>{
+        setLoading(false);
       });
     }
   };
@@ -114,7 +118,7 @@ function Contact({setAlert, variant}) {
           <input type="checkbox" id="captcha" />
           <label htmlFor="captcha">reCaptcha</label>
         </div> */}
-        <input type="submit" value="Submit" />
+        <input type="submit" value={loading ? "Submitting..." : "Submit"} />
       </form>
     </motion.section>
   )

@@ -571,6 +571,126 @@ section .head {
 
 .learning p {padding: 2px 0;}
 
+/* work experience section start  */
+.work-experience {
+  padding: 20px;
+}
+
+.work-experience .head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.work-experience .timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 920px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.work-experience .timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line thickness */
+  background: var(--grey); /* Line color */
+  transform: translateX(-50%);
+  z-index: 0; 
+}
+
+.timeline-item {
+  position: relative;
+  margin: 40px 0;
+  padding: 20px;
+  width: 45%; 
+  background: var(--charcoal); /* Card background */
+  color: var(--flash-white); /* Text color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item:nth-child(even) {
+  left: 0; 
+}
+
+.timeline-item:nth-child(odd) {
+  left: 55%;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  top: 20px; 
+  left: -14%;
+  width: 16px;
+  height: 16px;
+  background: var(--tiffany-blue);
+  border: 4px solid var(--charcoal);
+  border-radius: 50%; 
+  z-index: 1; 
+}
+
+.timeline-item:nth-child(even):before {
+  left: auto;
+  right: -14%;
+}
+
+.timeline-content h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-content .company {
+  font-size: 1.2rem;
+  color: var(--tiffany-blue);
+  margin-bottom: 5px;
+}
+
+.timeline-content .duration {
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-bottom: 15px;
+}
+
+.timeline-content .responsibilities {
+  padding-left: 20px;
+}
+
+.timeline-content .responsibilities li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  color: var(--flash-white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .work-experience .timeline:before {
+    left: 16px;
+  }
+
+  .timeline-item {
+    width: 96%;
+    left: 32px; 
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    left: 32px;
+  }
+
+  .timeline-item:nth-child(odd)::before, 
+  .timeline-item:nth-child(even)::before {
+    left: -28px;
+    right: auto;
+  }
+}
+
+/* work experience section end  */
 
 /********* Contact *********/
 .contact {

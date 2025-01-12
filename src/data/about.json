@@ -1,9 +1,9 @@
 {
   "about" : {
-    "para1" : "As a passionate web developer and current student, I am driven by a desire to learn, create, and innovate. My love for programming began in high school, and since then, I have been dedicated to honing my skills and expanding my knowledge.",
-    "para2" : "With a strong foundation in HTML, CSS, JavaScript, Node js, and MongoDB, I am well-equipped to develop dynamic and responsive websites that engage users and meet their needs. I am also proficient in popular frameworks such as React and Bootstrap, and I am constantly exploring new technologies to stay ahead of the curve.",
-    "para3" : "In addition to my technical skills, I bring a creative and collaborative mindset to every project I undertake. I enjoy working with teams and will also love to work with clients to understand their goals and visions, and I strive to bring those visions to life through my coding.",
-    "para4" : "As I continue my studies, I am eager to gain more hands-on experience through internships and freelance projects. I am excited to contribute my skills and enthusiasm to any organization that values innovation, teamwork, and a commitment to excellence."
+    "para1" : "As a passionate and dedicated web developer, I thrive on learning, creating, and solving real-world problems through technology. My journey in programming began during high school, and over the years, it has transformed from a hobby into a deep-rooted passion and career pursuit.",
+    "para2" : "With a strong command of HTML, CSS, JavaScript, TypeScript and backend technologies like Node.js and MongoDB, I specialize in building dynamic, responsive, and user-centric web applications. My expertise extends to modern frameworks such as React and Bootstrap, enabling me to craft visually appealing and seamless user experiences",
+    "para3" : "What sets me apart is my creative mindset and collaborative approach. Whether it's working within a team or directly with clients, I prioritize understanding goals and translating visions into functional and innovative solutions. I value clear communication and ensure that every project reflects excellence and attention to detail.",
+    "para4" : "As I advance my journey in web development, I actively seek opportunities to apply my skills in impactful ways. Be it through internships, freelance projects, or collaborative endeavors, I am eager to contribute to organizations that champion innovation, teamwork, and a forward-thinking mindset."
   },
   "education" : [
     {
@@ -37,6 +37,31 @@
       "learnings" : [
         "Developed foundational knowledge in various subjects",
         "Participated in extracurricular activities for holistic development"
+      ]
+    }
+  ],
+  "workExperience": [
+    {
+      "id": "we1",
+      "position": "Full Stack Intern",
+      "company": "Milestone Global Moneymart Pvt. Ltd.",
+      "duration": "Dec 2023 - Dec 2023",
+      "responsibilities": [
+        "Role-Based Access Control.",
+        "Routing in React, Public and Protected routes.",
+        "Proficiently integrated Facebook's, Twitter's, and LinkedIn's developer APIs to enable automated image posting functionality within the app."
+      ]
+    },
+    {
+      "id": "we2",
+      "position": "Full Stack Developer",
+      "company": "Milestone Global Moneymart Pvt. Ltd.",
+      "duration": "Jan 2024 - Present",
+      "responsibilities": [
+        "Improved application performance by optimizing database queries and implementing caching strategies, resulting in a 30% reduction in load times.",
+        "Created and deployed applications on cloud platforms like Heroku and Azure.",
+        "Implemented authentication and authorization mechanisms using JWT, login with Zoho and login with Google to secure user data and enhance application security.",
+        "State Management with Redux, Custom hooks, and Debouncing."
       ]
     }
   ]
