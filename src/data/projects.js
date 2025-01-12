@@ -4,13 +4,13 @@ const allProjects = [
     "title" :"onNotebook",
     "desc" : "An online note saving web application is a platform that enables users to create, store, and manage notes online. The app provides a simple, interactive, and user-friendly interface. Users can access their notes from any device connected to the internet, making it easy to keep track of important information on the go. With an online note saving web application, users can be sure that their notes are safe and secure, and that they can access them whenever they need them.",
     "techStack" : ["React","Node","MongoDb","Express","Bootstrap"],
-    "link" : "https://on-notebook.netlify.app/"
+    "link" : "https://on-notebook.netlify.app"
   },
   {
     "title" :"Babble",
     "desc" : "The Online Chat Web Application is a real-time chat platform built using the MERN stack. It allows users to authenticate and authorize themselves before engaging in chat conversations. Users can add and remove persons from thier chat list and they can send emojis also.",
     "techStack" : ["React","Node","MongoDb","Express","SocketIO"],
-    "link" : "https://github.com/Kishan-kr/chat-bird"
+    "link" : "https://chat-bird.netlify.app"
   },
   {
     "title" :"Weather Forecast",

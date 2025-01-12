@@ -440,6 +440,12 @@ section .head {
   text-wrap: nowrap;
 }
 
+#ts {
+  border: 1px solid #01D0F7;
+  background: rgba(1, 206, 247, 0.1);
+  flex-basis: 300px;
+}
+
 #js {
   background: rgba(245, 220, 27, 0.3);
   border: 1px solid #F5DD1B;

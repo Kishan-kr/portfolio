@@ -18,15 +18,16 @@ const skillVariant = {
 const skills = [
   {name:'react js', id:'react'},
   {name:'node js', id:'node'},
+  {name:'typescript', id:'ts'},
   {name:'javascript', id:'js'},
-  {name:'bootstrap', id:'bs'},
+  {name:'tailwind css', id:'tailwind'},
   {name:'espress js', id:'ex'},
   {name:'mongo db', id:'mongo'},
   {name:'c++', id:'cpp'},
   {name:'java', id:'java'},
   {name:'socket io', id:'socket'},
   {name:'html', id:'html'},
-  {name:'tailwind css', id:'tailwind'},
+  {name:'bootstrap', id:'bs'},
   {name:'css', id:'css'},
 ]
 

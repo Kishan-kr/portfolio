@@ -4,19 +4,24 @@ import avatar from '../avatar.png'
 import StartProject from './StartProject'
 
 function Home({variant}) {
-  const [quote, setQuote] = useState({})
+  const [quote, setQuote] = useState({content: "If you tell the truth, you don't have to remember anything.", author: 'Mark Twain'});
 
-  
-  useEffect(() => {
-    fetch('https://api.quotable.io/random?maxLength=120')
-    .then(response => response.json()).then((data)=> {
-      setQuote(data);
-    })
-
-    return () => {
-      setQuote({});
+  async function getQuote() {
+    try {
+      const response = await fetch('https://api.quotable.io/random?maxLength=120');
+      const data = await response.json();
+      if (data) {
+        setQuote(data);
+      }
+    } catch (error) {
+      console.error('Error fetching quote: ', error);
     }
-  }, [])
+  }
+  
+  // useEffect(() => {
+  //   getQuote();
+
+  // }, [])
   
   return (
     <motion.div 
