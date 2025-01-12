@@ -18,10 +18,10 @@ function Home({variant}) {
     }
   }
   
-  // useEffect(() => {
-  //   getQuote();
+  useEffect(() => {
+    getQuote();
 
-  // }, [])
+  }, [])
   
   return (
     <motion.div 
